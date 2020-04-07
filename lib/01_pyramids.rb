@@ -63,7 +63,6 @@ def wtf_pyramid(nbr_etage)
 
 		end
 	end
-
 end
 
 
