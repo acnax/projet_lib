@@ -73,10 +73,11 @@ def saisi()
 		puts "Salut, bienvenue dans ma super pyramide ! Combien d'étages veux-tu (1 à 25) ?"
 		print " > "
 		nbr_etage = gets.chomp.to_i
-		if nbr_etage > 0 && nbr_etage < 26
-            return nbr_etage
-    end
+	
 	end until(nbr_etage > 0 && nbr_etage < 26)
+
+	return nbr_etage
+
 end
 
 
@@ -85,11 +86,10 @@ def saisi_impair()
 		puts "Salut, bienvenue dans ma super pyramide ! Combien d'étages veux-tu (choisis un nombre impair) ?"
 		print " > "
 		nbr_etage = gets.chomp.to_i
-		if nbr_etage.odd?
-            return nbr_etage
-    end
-		
 	end until(nbr_etage.odd?)
+
+	return nbr_etage
+
 end
 
 
